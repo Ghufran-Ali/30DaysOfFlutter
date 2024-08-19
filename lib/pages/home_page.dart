@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app/widgets/drawer.dart';
 
 // ignore: use_key_in_widget_constructors
 class HomePage extends StatelessWidget {
@@ -9,9 +10,14 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Medical Kiosk"),
+        title: const Text(
+          "Medical Kiosk",
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         centerTitle: true,
-        backgroundColor: const Color.fromARGB(255, 253, 148, 11),
+        backgroundColor: Colors.deepPurple,
       ),
       body: const Center(
         child: Text(
@@ -19,8 +25,8 @@ class HomePage extends StatelessWidget {
           style: TextStyle(fontSize: 26, color: Colors.black),
         ),
       ),
-      drawer: const Drawer(),
-      backgroundColor: const Color.fromARGB(255, 247, 239, 173),
+      drawer: const MyDrawer(),
+      backgroundColor: Colors.white,
     );
   }
 }
