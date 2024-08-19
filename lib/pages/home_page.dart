@@ -10,14 +10,9 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Medical Kiosk",
-          style: TextStyle(
-            color: Colors.white,
-          ),
-        ),
+        title: const Text("Medical Kiosk"),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        //backgroundColor: Colors.deepPurple,
       ),
       body: const Center(
         child: Text(
